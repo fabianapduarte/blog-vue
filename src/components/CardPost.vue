@@ -17,13 +17,11 @@ defineProps({
     required: true
   }
 })
-const isProduction = process.env.NODE_ENV === 'production'
-const url = isProduction ? '/assets/' : '/src/assets/'
 </script>
 
 <template>
   <div class="card-grid">
-    <img :src="url + imageUrl" class="h-28 sm:h-60 w-28 sm:w-60 object-cover" />
+    <img :src="imageUrl" class="h-28 sm:h-60 w-28 sm:w-60 object-cover" />
     <div>
       <h4 class="font-serif font-bold text-2xl truncate-text title">{{ title }}</h4>
       <p class="text-sm my-2">{{ date }}</p>
