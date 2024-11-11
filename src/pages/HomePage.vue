@@ -13,7 +13,7 @@ import { recentPosts } from '@/data'
       <h2 class="text-5xl text-neutral-50 font-serif font-bold italic text-center mb-7">
         Descobrindo histórias e inspirações nas entrelinhas da literatura
       </h2>
-      <a href="#recent-posts" class="bg-primary text-neutral-50 py-3 px-6">Ver posts</a>
+      <RouterLink to="/posts" class="bg-primary text-neutral-50 py-3 px-6">Ver posts</RouterLink>
     </section>
     <section class="py-10 px-10 md:px-20 lg:px-40 content">
       <div id="recent-posts" class="bg-neutral-50 p-6 flex flex-col items-center h-fit">
